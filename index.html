@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkStatement</title>
+    <script type="text/javascript" src="marks.js"></script>
+    <style>
+        .minput{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>Student Result Analyser</center></h2>
+    <hr>
+    <h3><center> <label> Student Name :</label><input type="text" placeholder="" </center></h3>
+    <center>
+    <div style="display: flex;flex-direction: column; width: 200px; padding:10px;gap:10px" >
+     <input class="minput" type="text" id="m1" name="m1" placeholder="Enter mark of subject1" onblur="validateData1()">
+     <label id="m1check"></label>
+     <input class="minput" type="text" id="m2" name="m2" placeholder="Enter mark of subject2" onblur="validateData2()">
+     <label id="m2check"></label>
+     <input class="minput" type="text" id="m3" name="m3" placeholder="Enter mark of subject3" onblur="validateData3()">
+     <label id="m3check"></label>
+     <input class="minput" type="text" id="m4" name="m4" placeholder="Enter mark of subject4" onblur="validateData4()">
+     <label id="m4check"></label>
+     <input class="minput" type="text" id="m5" name="m5" placeholder="Enter mark of subject5" onblur="validateData5()">
+     <label id="m5check"></label>
+     <input class="minput" type="button" value="Get Result" onclick="getResult()" id="btn1">
+    </div>
+
+    <label >Total       : <span id="totaltxt"></span></label><br><br>
+    <label >Result      : <span id="resulttxt"></span></label><br><br>
+    <label >Percentage  : <span id="avgtxt"></span></label><br><br>
+
+</center>
+</body>
+</html>
